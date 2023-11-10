@@ -24,6 +24,7 @@
             android:text="@string/btn_guardaqr"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:backgroundTint="#FFA76C"
             android:textAlignment="center"/>
     </LinearLayout>
     <ImageView

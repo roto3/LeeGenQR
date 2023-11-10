@@ -53,10 +53,10 @@ class QrGenerado : AppCompatActivity() {
 
         fun guardafoto() {
             val salidaFich: FileOutputStream?
-            val ubicacionDisp = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-            val dir = File(ubicacionDisp.absolutePath + "/QrsGen")
-            dir.mkdirs()
-            val nombreFotoqr = String.format("%d.jpg", System.currentTimeMillis())
+            val ubicacionDisp = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) //Aquí sacamos la ubicación en el dispositivo, concretamente la ruta de imágenes (pictures/images/imágenes)
+            val dir = File(ubicacionDisp.absolutePath + "/QrsGen") //aquí la ruta de nuestra carpeta, añadida al final del directorio base
+            dir.mkdirs() //lo crea en caso de no existir
+            val nombreFotoqr = String.format("%d.jpg", System.currentTimeMillis()) //nuestro archivo tendrá por defecto el nombre del timestamp
             val archivofinal = File(dir, nombreFotoqr)
 
             try {
@@ -65,12 +65,12 @@ class QrGenerado : AppCompatActivity() {
                 salidaFich.flush()
                 salidaFich.close()
                 Toast.makeText(this,
-                    getString(R.string.mens_QR_gen_bien, nombreFotoqr), Toast.LENGTH_SHORT).show()
+                    getString(R.string.mens_QR_gen_bien, nombreFotoqr), Toast.LENGTH_SHORT).show() //feedback para el usuario del guardado de imagen
             } catch (e: Exception) {
                 e.printStackTrace()
                 println("aquí la cagadita")
             }
-        }
+        } //Esta función es la que genera y guarda el archivo jpg del QR generado
         fun llamaMens() {
             val creamens = AlertDialog.Builder(this)
             creamens.setMessage(getString(R.string.mens_guardaQR))
@@ -83,8 +83,9 @@ class QrGenerado : AppCompatActivity() {
                 }
             val mens =creamens.create()
             mens.show()
-        }
+        } //Esta función simplemente saca el Dialog para llamar a la función guardafoto
 
+        //tenemos 2 formas de guardar la foto, por si el usuario es imbécil
         foto!!.setOnLongClickListener{
             llamaMens()
             true

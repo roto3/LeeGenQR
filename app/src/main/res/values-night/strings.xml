@@ -13,4 +13,7 @@
     <string name="mens_guardaQR">¿Deseas guardar la imagen de tu QR generado?</string>
     <string name="btn_mens_guardar">Guardar</string>
     <string name="btn_mens_cancelar">Cancelar</string>
+    <string name="btn_gen_main">¡O genera tu propio QR!</string>
+    <string name="btn_scan_main">¡Pulsa para escanear!</string>
+    <string name="promp_scanQR">Escanea el QR</string>
 </resources>

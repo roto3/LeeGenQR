@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         val btnscaneo = findViewById<Button>(R.id.btnscan)
         val btncreaqr = findViewById<Button>(R.id.btncrea)
         btnscaneo.setOnClickListener {
+//            val permisos = registerForActivityResult(ActivityResultContracts.RequestPermission()){ isGranted ->
+//                falta ver como apaño el tema permisos
+//            }
             try {
                 escanea()
             } catch (e: Exception) {
@@ -48,7 +51,7 @@ class MainActivity : AppCompatActivity() {
     private fun escanea() {
         val opciones = ScanOptions()
         opciones.setBeepEnabled(false)
-        opciones.setPrompt("escanea el QR")
+        opciones.setPrompt(getString(R.string.promp_scanQR))
         opciones.setOrientationLocked(false)
         qrscLauncher.launch(opciones)
     }
