@@ -129,6 +129,7 @@ class CreaQR : AppCompatActivity() {
                     }else{
                         final = (urltexto.text).toString()
                         llamacreaqr()
+                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
                     }
                 }
                 R.id.rbdEmail ->
@@ -140,6 +141,7 @@ class CreaQR : AppCompatActivity() {
                     }else{
                         final = envemail+(edest.text)+";SUB:"+(easun.text)+";BODY:"+(econte.text)+".;;"
                         llamacreaqr()
+                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
                     }
 
                 }
@@ -168,6 +170,7 @@ class CreaQR : AppCompatActivity() {
                         }
                         final += finvc
                         llamacreaqr()
+                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
