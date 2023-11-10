@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrWebview">
+
+
+    <LinearLayout
+        android:id="@+id/laymenusup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/txturl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="URL"
+                tools:text="WEB EJEMPLO" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btncopia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:icon="?attr/actionModeCopyDrawable" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wvwQResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/laymenusup"
+        android:visibility="visible"
+        tools:visibility="gone">
+    </WebView>
+    <TextView
+        android:id="@+id/txtCont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="189dp"
+        android:layout_y="225dp"
+        android:text="texto"
+        android:layout_below="@+id/laymenusup"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="@string/txtcontejemplo"/>
+</RelativeLayout>

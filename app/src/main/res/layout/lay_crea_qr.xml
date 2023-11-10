@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreaQR">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/rbdgroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbdUrlTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Texto/url "
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbdVcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Tarjeta contacto " />
+
+            <RadioButton
+                android:id="@+id/rbdEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Recibir email " />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layTxturl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#80FFF3F3"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/lbltxturl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" Pon aquí tu texto o URL: " />
+
+        <EditText
+            android:id="@+id/txturltxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="http://www.miweb.com"
+            android:inputType="text"
+            android:maxLength="2000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layVcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80F2FFDC"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/lblnom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Nombre: " />
+
+        <EditText
+            android:id="@+id/txtnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Juan Carmelo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lblapell"
+            android:text=" Apellidos: "/>
+
+        <EditText
+            android:id="@+id/txtapell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Cotones Frescos-Robados" />
+
+        <TextView
+            android:id="@+id/lblTelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Teléfono: " />
+
+        <EditText
+            android:id="@+id/txttelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="651010101" />
+
+        <TextView
+            android:id="@+id/lblemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Email: " />
+
+        <EditText
+            android:id="@+id/txtmailvcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="ejemplo@empresa.com" />
+
+        <TextView
+            android:id="@+id/lblweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Página web: " />
+
+        <EditText
+            android:id="@+id/txtweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="www.miwebdeempresa.es" />
+
+        <TextView
+            android:id="@+id/lblempresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Empresa:" />
+
+        <EditText
+            android:id="@+id/txtempresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Avaricio S.A." />
+
+        <TextView
+            android:id="@+id/lblnot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Notas adicionales:" />
+
+        <EditText
+            android:id="@+id/txtnot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Añade aquí cualquier otra cosa extra del contacto"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80DCFAFF"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/lblDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Destinatario: " />
+
+        <EditText
+            android:id="@+id/txtdestin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="emailDeRecepción@empresa.com" />
+
+        <TextView
+            android:id="@+id/lblAsun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Asunto" />
+
+        <EditText
+            android:id="@+id/txtasunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Incidencia con X producto" />
+
+        <TextView
+            android:id="@+id/lblCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Cuerpo del mensaje (contenido):" />
+
+        <EditText
+            android:id="@+id/txtconten"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:textAlignment="center"
+            android:ems="10"
+            android:hint="Aquí el contenido del email, puedes poner un mensaje que aporte contexto o algo genérico si te vale con el asunto"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <TextView
+        android:background="#FFFF00"
+        android:id="@+id/lblaviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/avisoUrl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btngeneraQR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"
+            android:foreground="#2359FF00"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:text="¡Genera!" />
+
+        <Button
+            android:id="@+id/btndelet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:foreground="#A3FF0000"
+            android:textColor="#FFE643"
+            android:text="BORRAR" />
+    </LinearLayout>
+
+</LinearLayout>

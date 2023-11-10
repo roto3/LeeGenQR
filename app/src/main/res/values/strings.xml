@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LeeQR</string>
+    <string name="txtcontejemplo">There is only darkness for you, and only death for your people. These ancients are just the beginning. I will command a great and terrible army... and we will sail to a billion worlds. We will sail until every light has been extinguished. You are strong, child. But I am beyond strength. I am the end. [...] And I have come for you, Finn."</string>
+    <string name="txt_tarjCont">Lo escaneado es una tarjeta de contacto</string>
+    <string name="txt_envEmail">Lo escaneado es un envío de email</string>
+    <string name="txt_noWeb">Lo escaneado no es un QR a una web</string>
+    <string name="avisoUrl">Recuerda poner el http/https si es una URL para una mejor compatibilidad</string>
+    <string name="avisoVcard">Recuerda que debes introducir un nombre y un método de contacto como mínimo</string>
+    <string name="avisoEmail">Recuerda que el destinatario es el email al que llegará el correo, el remitente será la persona que escanee tu código</string>
+    <string name="btn_guardaqr">¡Guarda mi QR!</string>
+    <string name="mens_QR_gen_bien">Tu QR generado (%1$s) se ha guarado con éxito en la carpeta QrsGen dentro de imágenes</string>
+    <string name="mens_guardaQR">¿Deseas guardar la imagen de tu QR generado?</string>
+    <string name="btn_mens_guardar">Guardar</string>
+    <string name="btn_mens_cancelar">Cancelar</string>
+</resources>
