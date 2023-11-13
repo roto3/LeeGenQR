@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LeeQR</string>
-    <string name="txtcontejemplo">There is only darkness for you, and only death for your people. These ancients are just the beginning. I will command a great and terrible army... and we will sail to a billion worlds. We will sail until every light has been extinguished. You are strong, child. But I am beyond strength. I am the end. [...] And I have come for you, Finn."</string>
+    <string name="txtcontejemplo">There is only darkness for you, and only death for your people. These ancients are just the beginning. I will command a great and terrible army... and we will sail to a billion worlds. We will sail until every light has been extinguished. You are strong, child. But I am beyond strength. I am the end... And I have come for you, Finn."</string>
     <string name="txt_tarjCont">Lo escaneado es una tarjeta de contacto</string>
     <string name="txt_envEmail">Lo escaneado es un envío de email</string>
     <string name="txt_noWeb">Lo escaneado no es un QR a una web</string>
@@ -16,4 +16,36 @@
     <string name="btn_gen_main">¡O genera tu propio QR!</string>
     <string name="btn_scan_main">¡Pulsa para escanear!</string>
     <string name="promp_scanQR">Escanea el QR</string>
+    <string name="toastCreandoQR">Creando su QR...</string>
+    <string name="avisoNomail">No puede haber un campo vacío, introduce algún valor</string>
+    <string name="avisoNotelf">Debes introducir como mínimo, un nombre y un teléfono válido</string>
+    <string name="avisoNoweb">El campo está vacío, introduce algún valor</string>
+    <string name="txt_rburl"> Texto/url: </string>
+    <string name="txt_rbdcontact"> Tarjeta contacto</string>
+    <string name="txt_rbdmail"> Recibir email</string>
+    <string name="txt_infUrl"> Pon aquí tu texto o URL: </string>
+    <string name="hint_web">http://www.miweb.com</string>
+    <string name="txt_infNom"> Nombre: </string>
+    <string name="hint_nom">Juan Carmelo</string>
+    <string name="txt_infApell"> Apellidos: </string>
+    <string name="hint_apell">Cotones Frescos-Robados</string>
+    <string name="txt_infTelf"> Teléfono: </string>
+    <string name="hint_telf">651013555</string>
+    <string name="txt_infMail"> Email: </string>
+    <string name="hint_mail">ejemplo@empresa.com</string>
+    <string name="txt_infWeb"> Página web: </string>
+    <string name="txt_infEmp"> Empresa: </string>
+    <string name="hint_emp">Avaricio S.A.</string>
+    <string name="txt_infNot"> Notas adicionales: </string>
+    <string name="hint_nota">Añade aquí cualquier otra cosa extra del contacto</string>
+    <string name="txt_infDestin"> Destinatario: </string>
+    <string name="txt_infAsunto"> Asunto: </string>
+    <string name="txt_infCuerpo">" Cuerpo del mensaje (contenido: "</string>
+    <string name="hint_content">Aquí el contenido del email, puedes poner un mensaje que aporte contexto o algo genérico si te vale con el asunto</string>
+    <string name="hint_asunto">Incidencia con X producto</string>
+    <string name="btn_gen">¡Genera!</string>
+    <string name="btn_borrar">BORRAR</string>
+    <string name="avisoBorra">Se borrará todo el contenido, ¿estás seguro?</string>
+    <string name="borra">Borrar</string>
+    <string name="cancel">Cancelar</string>
 </resources>

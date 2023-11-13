@@ -82,9 +82,9 @@ class CreaQR : AppCompatActivity() {
         }
         btnborra.setOnClickListener {
          val creamens = AlertDialog.Builder(this)
-         creamens.setMessage("Se borrará todo el contenido, ¿estás seguro?")
+         creamens.setMessage(R.string.avisoBorra)
              .setCancelable(true)
-             .setPositiveButton("Borrar"){ dialog, id ->
+             .setPositiveButton(R.string.borra){ dialog, id ->
                  when (selec){
                      R.id.rbdUrlTxt ->
                      {
@@ -108,7 +108,7 @@ class CreaQR : AppCompatActivity() {
                      }
                  }
              }
-             .setNegativeButton("Cancelar"){ dialog, id ->
+             .setNegativeButton(R.string.cancel){ dialog, id ->
                  dialog.dismiss()
              }
          val mens =creamens.create()
@@ -125,11 +125,11 @@ class CreaQR : AppCompatActivity() {
                 R.id.rbdUrlTxt ->
                 {
                     if (urltexto.text.toString().trim().isEmpty() ||urltexto.text.toString().trim()==""){
-                        Toast.makeText(this, "El campo está vacío, introduce algún valor", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.avisoNoweb, Toast.LENGTH_SHORT).show()
                     }else{
                         final = (urltexto.text).toString()
                         llamacreaqr()
-                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.toastCreandoQR, Toast.LENGTH_SHORT).show()
                     }
                 }
                 R.id.rbdEmail ->
@@ -137,18 +137,18 @@ class CreaQR : AppCompatActivity() {
                     if (edest.text.toString().trim().isEmpty() || easun.text.toString().trim()
                             .isEmpty() || econte.text.toString().trim().isEmpty()
                     ){
-                        Toast.makeText(this, "No puede haber un campo vacío, introduce algún valor", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.avisoNomail, Toast.LENGTH_SHORT).show()
                     }else{
                         final = envemail+(edest.text)+";SUB:"+(easun.text)+";BODY:"+(econte.text)+".;;"
                         llamacreaqr()
-                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.toastCreandoQR, Toast.LENGTH_SHORT).show()
                     }
 
                 }
                 R.id.rbdVcard ->
                 {
                     if(vnombre.text.toString().trim().isEmpty() ||vtelf.text.toString().trim().length<9||vnombre.text.toString().trim()==""||vtelf.text.toString().trim()==""){
-                        Toast.makeText(this, "Debes introducir como mínimo, un nombre y un teléfono válido", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.avisoNotelf, Toast.LENGTH_SHORT).show()
                     }else{
                         final = tarjcont+nombre
                         if (vapell.text.toString().trim().isNotEmpty()){
@@ -170,7 +170,7 @@ class CreaQR : AppCompatActivity() {
                         }
                         final += finvc
                         llamacreaqr()
-                        Toast.makeText(this, "Creando su QR...", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.toastCreandoQR, Toast.LENGTH_SHORT).show()
                     }
                 }
             }

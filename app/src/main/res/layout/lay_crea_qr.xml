@@ -22,21 +22,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text=" Texto/url "/>
+                android:text="@string/txt_rburl"/>
 
             <RadioButton
                 android:id="@+id/rbdVcard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text=" Tarjeta contacto " />
+                android:text="@string/txt_rbdcontact" />
 
             <RadioButton
                 android:id="@+id/rbdEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text=" Recibir email " />
+                android:text="@string/txt_rbdmail" />
         </RadioGroup>
 
     </LinearLayout>
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" Pon aquí tu texto o URL: " />
+            android:text="@string/txt_infUrl" />
 
         <EditText
             android:id="@+id/txturltxt"
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="http://www.miweb.com"
+            android:hint="@string/hint_web"
             android:inputType="text"
             android:maxLength="2000" />
     </LinearLayout>
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Nombre: " />
+            android:text="@string/txt_infNom" />
 
         <EditText
             android:id="@+id/txtnom"
@@ -91,13 +91,13 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="Juan Carmelo" />
+            android:hint="@string/hint_nom" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/lblapell"
-            android:text=" Apellidos: "/>
+            android:text="@string/txt_infApell"/>
 
         <EditText
             android:id="@+id/txtapell"
@@ -106,14 +106,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="Cotones Frescos-Robados" />
+            android:hint="@string/hint_apell" />
 
         <TextView
             android:id="@+id/lblTelf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Teléfono: " />
+            android:text="@string/txt_infTelf" />
 
         <EditText
             android:id="@+id/txttelf"
@@ -122,14 +122,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="651010101" />
+            android:hint="@string/hint_telf" />
 
         <TextView
             android:id="@+id/lblemail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Email: " />
+            android:text="@string/txt_infMail" />
 
         <EditText
             android:id="@+id/txtmailvcard"
@@ -138,14 +138,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="ejemplo@empresa.com" />
+            android:hint="@string/hint_mail" />
 
         <TextView
             android:id="@+id/lblweb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Página web: " />
+            android:text="@string/txt_infWeb" />
 
         <EditText
             android:id="@+id/txtweb"
@@ -154,14 +154,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="www.miwebdeempresa.es" />
+            android:hint="@string/hint_web" />
 
         <TextView
             android:id="@+id/lblempresa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Empresa:" />
+            android:text="@string/txt_infEmp" />
 
         <EditText
             android:id="@+id/txtempresa"
@@ -170,14 +170,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="Avaricio S.A." />
+            android:hint="@string/hint_emp" />
 
         <TextView
             android:id="@+id/lblnot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Notas adicionales:" />
+            android:text="@string/txt_infNot" />
 
         <EditText
             android:id="@+id/txtnot"
@@ -186,7 +186,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:hint="Añade aquí cualquier otra cosa extra del contacto"/>
+            android:hint="@string/hint_nota"/>
 
 
     </LinearLayout>
@@ -204,7 +204,7 @@
             android:id="@+id/lblDest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Destinatario: " />
+            android:text="@string/txt_infDestin" />
 
         <EditText
             android:id="@+id/txtdestin"
@@ -212,13 +212,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="emailDeRecepción@empresa.com" />
+            android:hint="@string/hint_mail" />
 
         <TextView
             android:id="@+id/lblAsun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Asunto" />
+            android:text="@string/txt_infAsunto" />
 
         <EditText
             android:id="@+id/txtasunto"
@@ -226,13 +226,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="Incidencia con X producto" />
+            android:hint="@string/hint_asunto" />
 
         <TextView
             android:id="@+id/lblCont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Cuerpo del mensaje (contenido):" />
+            android:text="@string/txt_infCuerpo" />
 
         <EditText
             android:id="@+id/txtconten"
@@ -240,7 +240,7 @@
             android:layout_height="140dp"
             android:textAlignment="center"
             android:ems="10"
-            android:hint="Aquí el contenido del email, puedes poner un mensaje que aporte contexto o algo genérico si te vale con el asunto"
+            android:hint="@string/hint_content"
             android:inputType="textMultiLine" />
     </LinearLayout>
 
@@ -266,7 +266,7 @@
             android:layout_weight="1"
             android:textSize="40dp"
             android:textColor="#000000"
-            android:text="¡Genera!" />
+            android:text="@string/btn_gen" />
 
         <Button
             android:id="@+id/btndelet"
@@ -276,7 +276,7 @@
             android:backgroundTint="#A3FF0000"
             app:cornerRadius="0dp"
             android:textColor="#FFE643"
-            android:text="BORRAR" />
+            android:text="@string/btn_borrar" />
     </LinearLayout>
 
 </LinearLayout>
