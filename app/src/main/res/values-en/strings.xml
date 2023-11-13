@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_tarjCont">Scanned QR corresponds to a VCard/contact card</string>
+    <string name="txt_envEmail">Scanned QR corresponds to an email sending one</string>
+    <string name="txt_noWeb">Scanned QR does not match with any kind of URL</string>
+    <string name="avisoUrl">Remember to add http/https when putting an URL for a better compatibility</string>
+    <string name="avisoVcard">Remember to add at least a valid name and one contact method</string>
+    <string name="avisoEmail">Friendly reminder: the email you put here will be the addressee and the sender wil be the person who scans the QR code</string>
+    <string name="btn_guardaqr">Save my QR!</string>
+    <string name="mens_QR_gen_bien">Your generated QR has been successfully saved on the QRsGen directory inside images</string>
+    <string name="mens_guardaQR">Do you want to save a QR image?</string>
+    <string name="btn_mens_guardar">Save</string>
+    <string name="btn_mens_cancelar">Cancel</string>
+    <string name="btn_gen_main">Or generate your own!</string>
+    <string name="btn_scan_main">Click to scan!</string>
+    <string name="promp_scanQR">Scan QR code</string>
+    <string name="toastCreandoQR">Generating QR...</string>
+    <string name="avisoNomail">Please, fill all the empty fields</string>
+    <string name="avisoNotelf">Please, indroduce a valid phone and name</string>
+    <string name="avisoNoweb">The field is empty, please fill it first</string>
+    <string name="txt_rburl">Text/url:</string>
+    <string name="txt_rbdcontact">"Contact card: "</string>
+    <string name="txt_rbdmail">Email receiver:</string>
+    <string name="txt_infUrl">Introduce a text or URL:</string>
+    <string name="txt_infNom">" Name:"</string>
+    <string name="hint_nom">John Imelavo</string>
+    <string name="txt_infApell">" Surname:"</string>
+    <string name="hint_apell">Smith</string>
+    <string name="txt_infTelf">" Phone:"</string>
+    <string name="hint_telf">12125551234</string>
+    <string name="txt_infWeb">" Webpage: "</string>
+    <string name="txt_infEmp">" Company: "</string>
+    <string name="txt_infNot">" Additional notes: "</string>
+    <string name="hint_nota">Add anything else you need about the contact</string>
+    <string name="txt_infDestin">" Receiver:"</string>
+    <string name="txt_infAsunto">" Subject:"</string>
+    <string name="txt_infCuerpo">"  Body: "</string>
+    <string name="hint_content">Here goes the body of the email where you can put something predefined in case you need to add an extra message aside from the subject</string>
+    <string name="hint_asunto">Help support</string>
+    <string name="btn_gen">Generate!</string>
+    <string name="btn_borrar">DELETE</string>
+    <string name="avisoBorra">All content will be cleared, are you sure?</string>
+    <string name="borra">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="sup_infoQR">" QR contents: "</string>
+    <string name="app_name">QReasy</string>
+</resources>

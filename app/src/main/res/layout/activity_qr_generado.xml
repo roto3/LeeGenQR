@@ -6,7 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".QrGenerado">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#007302"
+        android:background="#2A11FF00"
+        android:gravity="center"
+        android:text="@string/sup_infoQR"/>
     <TextView
         android:id="@+id/txtrecib"
         android:layout_width="match_parent"
@@ -16,8 +27,9 @@
         android:visibility="visible"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:gravity="center"
+        android:layout_weight="1"
         android:orientation="horizontal">
         <Button
             android:id="@+id/btnguardaQR"
@@ -27,6 +39,7 @@
             android:backgroundTint="#FFA76C"
             android:textAlignment="center"/>
     </LinearLayout>
+</LinearLayout>
     <ImageView
         android:id="@+id/fotoqr"
         android:layout_width="match_parent"
